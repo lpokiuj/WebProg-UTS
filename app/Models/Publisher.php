@@ -9,4 +9,9 @@ class Publisher extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+    public function books()
+    {
+        return $this->hasMany(Book::class, 'publisher_id');
+    }
 }

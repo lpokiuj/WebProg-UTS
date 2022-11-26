@@ -9,7 +9,7 @@ class CategoryController extends Controller
 {
     public function show($id)
     {
-        $data = Category::find($id)->load('books');
-        return view('category')->with('category', $data);
+        $book = Category::find($id)->load('books');
+        return view('category', ['category' => $book]);
     }
 }

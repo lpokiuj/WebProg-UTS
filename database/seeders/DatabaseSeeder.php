@@ -38,7 +38,35 @@ class DatabaseSeeder extends Seeder
             [
                 'book_id' => 2,
                 'category_id' => 5
-            ]
+            ],
+            [
+                'book_id' => 3,
+                'category_id' => 5
+            ],
+            [
+                'book_id' => 3,
+                'category_id' => 4
+            ],
+            [
+                'book_id' => 4,
+                'category_id' => 6
+            ],
+            [
+                'book_id' => 4,
+                'category_id' => 9
+            ],
+            [
+                'book_id' => 5,
+                'category_id' => 8
+            ],
+            [
+                'book_id' => 5,
+                'category_id' => 7
+            ],
+            [
+                'book_id' => 5,
+                'category_id' => 6
+            ],
         ]);
     }
 }

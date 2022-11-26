@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\PublisherController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ContactController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,6 +24,8 @@ Route::get('/publishers', [PublisherController::class, 'index']);
 
 Route::get('/categories/{id}', [CategoryController::class, 'show']);
 
+Route::get('/contact', [ContactController::class, 'index']);
+
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/books');
 });

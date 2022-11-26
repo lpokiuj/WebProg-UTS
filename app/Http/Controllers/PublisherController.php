@@ -9,7 +9,7 @@ class PublisherController extends Controller
 {
     public function index()
     {
-        $data = Publisher::all();
-        return view('publisher')->with('publishers', $data);
+        $book = Publisher::all()->load('books');
+        return view('publisher', ['publishers' => $book]);
     }
 }
